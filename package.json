@@ -1,0 +1,29 @@
+{
+  "name": "7segmentsdisplay",
+  "version": "1.0.0",
+  "description": "BeeBuziness test",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./app/app.ts 0123456789",
+    "convert": "tsc && node ./build/app.js",
+    "test": "mocha -r ts-node/register app/test/*.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.3.4000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jejearri/7segmentsConverter.git"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.5",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "ts-node-dev": "^1.0.0-pre.32"
+  }
+}
